@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+body {
+  background-color: black;
+  color: seashell;
+  font-family: Helvetica;
+  font-size: 22px;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: 69px;
+  top: 0px;
+  border-bottom: 1px solid seashell;
+  width: 100%;
+  background-color: black;
+  opacity: 1;
+  z-index: 2;
+}
+
+.logo img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 400px;
+  margin-right: 10px;
+}
+nav a {
+  color: seashell;
+}
+
+/* Main Content */
+main {
+  position: relative;
+  top: 70px;
+}
+
+.mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 700px;
+  width: 1200px;
+  background-image: url("../images/img-mission-background.jpg");
+  margin: auto;
+}
+
+.mission > * {
+  width: 100%;
+  background-color: black;
+  margin: 0px;
+  padding: 10px 0px;
+}
+
+/* Tea of the Month */
+.tea-of-the-month {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 1000px;
+  margin: 40px auto;
+}
+.tea-of-the-month h2, .tea-of-the-month h4 {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tea-of-the-month figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.tea-of-the-month figure img {
+  width: 300px;
+  height: 200px;
+}
+
+/* Locations */
+.all-locations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  height: 500px;
+  width: 1200px;
+  background-image: url("../images/img-locations-background.jpg");
+}
+
+.all-locations .title {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.all-locations .locations {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+
+.location {
+  opacity: 1;
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  margin-right: 40px;
+}
+
+.location br {
+    line-height: 3em;
+}
+
+/* Footer */
+footer {
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+footer a {
+  color: seashell;
+  text-decoration: none;
+}
+
+footer .copyright {
+  text-align: left;
+  margin-left: 20px;
+}
